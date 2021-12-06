@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Test Task</title>
+</head>
+<body>
+    <div class="catalog _container">
+        <div class="catalog__header header">
+            <div class="header__title">
+                <h2 class="header__name">Каталог</h2>
+            </div>
+        </div>
+
+        <div class="catalog__options options">
+            <ul class="optoins__list">
+                <li class="options__item">
+                    <img src="./img/sneaker.svg" alt="Shoes" class="options__img options__img-1">
+                    <a href="#" class="options__link active">Обувь</a>
+                </li>
+                <li class="options__item">
+                    <img src="./img/other-clothes.svg" alt="Other clothes" class="options__img options__img-2">
+                    <a href="#" class="options__link ">Другая одежда</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <span class="filter__button_box hidden"></span>
+            <button id="filter__button" class="filter__button hidden">ОТКРЫТЬ ФИЛЬТР</button>
+        </div>
+
+        <div class="catalog-products-sorting">
+            <div class="products-filters">
+                <div class="filters">
+                    <ul class="filters__list">
+                        <li class="filters__item">
+                            <a href="#" class="filters__link filters__link_grey">Сортировать</a>
+                        </li>
+                        <li class="filters__item">
+                            <a href="#" class="filters__link filters__link_active">по цене</a>
+                            <span class=""></span>
+                        </li>
+                        <li class="filters__item">
+                            <a href="#" class="filters__link">по алфавиту</a>
+                        </li>
+                        <li class="filters__item">
+                            <a href="#" class="filters__link">по дате обновления</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="products">
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers1.jpg" alt="Nike T-LITE XI">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки T-LITE XI</span></p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers2.jpg" alt="Nike AIR MAX 72">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки AIR MAX 720</span></p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers3.jpg" alt="Nike MEN'S AIR MONARCH IV TRAINING SHOE">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</span></p>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers1.jpg" alt="Nike T-LITE XI">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки T-LITE XI</span></p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers2.jpg" alt="Nike AIR MAX 72">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки AIR MAX 720</span></p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers3.jpg" alt="Nike MEN'S AIR MONARCH IV TRAINING SHOE">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</span></p>
+                    </div>
+
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers1.jpg" alt="Nike T-LITE XI">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки T-LITE XI</span></p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers2.jpg" alt="Nike AIR MAX 72">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки AIR MAX 720</span></p>
+                    </div>
+                    <div class="products__item">
+                        <div class="products__icon">
+                            <img src="./img/sneakers3.jpg" alt="Nike MEN'S AIR MONARCH IV TRAINING SHOE">
+                        </div>
+                        <p class="products__price">3771 <span class="rub">P</span></p>
+                        <p class="products__text">Nike <span class="grey">/ Кроссовки MEN'S AIR MONARCH IV TRAINING SHOE</span></p>
+                    </div>
+                </div>
+                <button class="products-filters__button">ЗАГРУЗИТЬ ЕЩЕ</button>
+            </div>
+
+            <div id="sort-form" class="sorting-form">
+                <div class="sorting__name">
+                    <h2 class="sorting__title">Фильтры</h2>
+                    <p class="sorting__subtitle"> <a href="#" class="sorting__link">Сбросить</a></p>
+                </div>
+                <div class="form">
+                    <div class="form__item form-price">
+                        <h3 class="form-price__title">Цена, <span class="rub">P</span></h3>
+                        <div class="form-price__inputs">
+                            <label class="form-price__label">
+                                <span class="form-price__text">от</span>
+                                <input type="number" maxlength="5" min="3000" max="40000" placeholder="3777" class="form-price__input" id="input-0">
+                            </label>
+                            <label class="form-price__label">
+                                <span class="form-price__text">до</span>
+                                <input type="number" maxlength="5" min="3000" max="40000" placeholder="32777" class="form-price__input" id="input-1">
+                            </label>
+                        </div>
+                        <div class="form-price__slider" id="range-slider"></div>
+                    </div>
+                    <div class="check">
+                        <p class="check__title">Тип продукта</p>
+                        <label class="check__label option">
+                            <input class="check__input" type="checkbox" checked>
+                            <span class="check__box"></span>
+                            Первый тип
+                        </label>
+                        <label class="check__label option">
+                            <input class="check__input" type="checkbox">
+                            <span class="check__box"></span>
+                            Второй тип
+                        </label>
+                    </div>
+                    
+                    <div class="radio">
+                        <p class="radio__title">Категория</p>                    
+                            <label class="radio__label option">
+                                <input class="radio__input" type="radio" value="shoes" checked name="category"/>
+                                <span class="radio__box"></span>
+                                Обувь
+                            </label>                                              
+                            <label class="radio__label option">
+                                <input class="radio__input" type="radio" value="clothes" name="category"/>
+                                <span class="radio__box"></span>
+                                Одежда
+                            </label>                      
+                            <label class="radio__label option">
+                                <input class="radio__input" type="radio" value="somethingElse" name="category"/>
+                                <span class="radio__box"></span>
+                                Остальное
+                            </label>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
